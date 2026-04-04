@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CWWYH – Cook With What You Have</title>
+
+  <!-- Linking CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Landing Page Section -->
+  <section class="landing">
+    <h1>You have ingredients, We have plans.</h1>
+    <p>Turn limited ingredients into delicious, clean meals.</p>
+    <button id="startBtn">Start Cooking</button>
+  </section>
+
+  <!-- Ingredient Input Section -->
+  <section class="ingredients hidden">
+
+    <h2>Enter Available Ingredients</h2>
+
+    <form>
+
+      <!-- Ingredients -->
+      <label>Ingredients (comma separated)</label>
+      <input type="text" placeholder="Rice, Tomato, Onion">
+
+      <!-- Quantity -->
+      <label>Quantity</label>
+      <input type="text" placeholder="e.g. 1 cup, 2 tomatoes">
+
+      <!-- Servings -->
+      <label>Number of servings</label>
+      <input type="number" min="1" value="1">
+
+      <!-- Food Preference -->
+      <label>Food Preference</label>
+      <select>
+        <option>Vegetarian</option>
+        <option>Eggetarian</option>
+        <option>Non-Vegetarian</option>
+      </select>
+
+      <!-- Allergy -->
+      <label>Allergies (optional)</label>
+      <input type="text" placeholder="Peanuts, dairy">
+
+      <!-- Difficulty -->
+      <label>Difficulty Level</label>
+      <select>
+        <option>Beginner</option>
+        <option>Moderate</option>
+        <option>Pro</option>
+      </select>
+
+      <button type="submit">Find Recipes</button>
+
+    </form>
+
+  </section>
+
+  <!-- Linking JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>
